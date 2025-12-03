@@ -7,13 +7,13 @@ I think every country must be analyzed specifically i mean if you analyzing all 
 This function created to understand the data in more detail and it shows shape,data types,sample rows,unique and missing values
 
 <div align="center">
-  <img src="General EDA/YUSUF DOGU/images_from_analysis/dimensions_and_type.png" alt="Shape and Data Types" width="600">
+  <img src="images_from_analysis/dimensions_and_type.png" alt="Shape and Data Types" width="600">
 </div>
 <div align="center">
-  <img src="General EDA/YUSUF DOGU/images_from_analysis/first_row.png" alt="First Row" width="600">
+  <img src="images_from_analysis/first_row.png" alt="First Row" width="600">
 </div>
 <div align="center">
-  <img src="General EDA/YUSUF DOGU/images_from_analysis/missing_and_unique_values.png" alt="Missing and Unique Values" width="600">
+  <img src="images_from_analysis/missing_and_unique_values.png" alt="Missing and Unique Values" width="600">
 </div>
 
 ##detailed_missing_value_analysis() 
