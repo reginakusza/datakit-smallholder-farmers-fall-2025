@@ -15,7 +15,9 @@ This is a random forest classifier model. A few weather-related features (minimu
 
 ### Why these 11 topics?
 
-Topics were chosen to be useful while also working within this weather model. All of the chosen topics made up at least 2% of total questions in the dataset, and collectively these topics accounted for ~65% of all questions. Rarer topics would have been difficult to include due to having less data than the other topics (both over- and under-sampling techniques were tested, but neither improved the model). A small number of common topics were also excluded either because the model could not connect the weather data to the topic, or because the qusetions under that topic were broad enough to make it less helpful (e.g., 'plant', 'crop', or 'animal'). For similar reasons, the model does not include any engineered 'miscellaneous' topics made from the rarer topics.
+Topics were chosen to be useful while also working within this weather model. All of the chosen topics made up at least 2% of total questions in the dataset, and collectively these topics accounted for ~65% of all questions. Rarer topics would have been difficult to include due to having less data than the other topics (both over- and under-sampling techniques were tested, but neither improved the model). 
+
+A small number of common topics were also excluded either because the model could not connect the weather data to the topic, or because the qusetions under that topic were broad enough to make it less helpful (e.g., 'plant', 'crop', or 'animal'). For similar reasons, the model does not include any engineered 'miscellaneous' topics made from the rarer topics.
 
 ### How well did weather predict question topic?
 
