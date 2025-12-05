@@ -32,7 +32,7 @@ By analyzing key word similarities, I was able to determine which questioned wer
 [Sell Questions by Month (Uganda)]
 
 
-When zooming in on this analysis and comparing by year, we can see that similar trends occur each year. The years 2018 and 2020 in particular have clear peaks in the concentration of selling related questions during harvest periods. Years 2017 and 2019 don't have as prominent of a correlation, but still have the two months with the highest concentration of market related questions fall within both harvest periods. 2021 saw this peak occur in May for reasons unknown, but may possibly have been related to unique weather and harvesting times that year.
+When zooming in on this analysis and comparing by year, we can see that similar trends occur each year. When analyzing data for Uganda, the years 2018 and 2020 in particular have clear peaks in the concentration of selling related questions during harvest periods. Years 2017 and 2019 don't have as prominent of a correlation, but still have the two months with the highest concentration of market related questions fall within both harvest periods. 2021 saw this peak occur in May for reasons unknown, but may possibly have been related to unique weather and harvesting times that year. When analyzing the same data for Kenya, less of a correlation is present and the concentration of market based quesitons is much more stable throughout the calendar year. Some years, particularly 2018, still exhibit this correlation. It is possible Kenya has more varying harvest periods depending on the crop, but the reasons for the slight differences in question concentration between Uganda and Kenya are currently unclear.
 
 [Sell Questions by Year (Kenya)]
 [Sell Questions by Year (Uganda)]
@@ -41,9 +41,42 @@ When zooming in on this analysis and comparing by year, we can see that similar 
 
 The code for this analysis can be found in the 'Question Similarity Analysis.ipynb' notebook.
 
-I first imported the data using pandas and filtered out columns unrelated to the question asked. I then began cleaning the question_content column by first creating a new column with the questions in all lowercase.
+Requirements:
+
+pandas                            2.2.3
+
+nltk                              3.9.1
+
+pyenchant                         3.3.0
+
+matplotlib                        3.10.0
+
+wordcloud                         1.9.4
+
+spacy                             3.8.11
+
+en_core_web_lg                    3.8.0
+
+gensim                            4.4.0
 
 
+### Data Cleaning and Analysis Steps
+
+#### A: Data Cleaning
+1. Import data
+    - This analysis utilizes Python and Jupyter Notebook. The pandas library was used for importing and cleaning data. Data was filtered to only include questions in english
+2. Remove unecessary columns
+    - Here we will only keep columns relating to the question asked, including the question itself, time, and location asked. We will remove question topic as well, as we will attempt to categorize the data seperately
+3. Clean question_content column
+    - Change all text to lowercase
+    - Remove Punctuation and Stopwords
+    - Tokenize and Lemmatize Text
+
+#### B: Analysis
+
+4. Count total occurances of each used word, remove numbers and non-english words
+5. Rank occured words by similarity
+6. Label questions based on word similarity
 
 # Further Questions:
 
